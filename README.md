@@ -26,25 +26,26 @@ TP Integration Continue - Groupe 6 - Delécolle Florent & Fretel Alexandre & Iza
 		● TomCat
 
 ### 2 - Difficultés rencontrées et solutions apportées ###
-
-   	● Difficulté à mettre en place les credentials : 
+	
+	● Difficulté avec Eclispe : Passage à NetBeans
+   	● Difficulté à mettre en place les credentials : Il fallait passer par le protocole HTTPS au lieu du protocole SSH
 
 
 ### 3 - Les techniques utilisées ###
 
-	● Jenkins		<=>	???
-	● JUNIT			<=>	Tests unitaires
-	● Maven/Gradle/Nexus	<=>	Gestionnaire de dépendances 
+	● Jenkins		<=>	
+	● Maven			<=>	Gestionnaire de dépendances 
 	● BitBucket		<=>	Gestionnaire de sources
 	● Git			<=> 	Outil de versionning
 	● NetBeans		<=> 	IDE
 	● Sonar Qube		<=>	Outils d'analyse de code
 	● MySQL			<=>	SGBDR
+	● Docker		<=> 	Virtualisation
 
 ### 4 - Organisation ###
 
-	● Delécolle Florent	<=>	
-	● Fretel Alexandre	<=>	Jenkins
-	● Izart Paul		<=>	Sonarqube
-	● Pinto Robin		<=>	BitBucket
+	● Delécolle Florent	<=>	Tomcat, Dockers, Jenkins
+	● Fretel Alexandre	<=>	Jenkins, Github
+	● Izart Paul		<=>	Sonarqube, Documentation
+	● Pinto Robin		<=>	BitBucket, Maven, JAVA, Github, Mysql, Netbeans
 
