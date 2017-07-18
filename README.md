@@ -16,6 +16,7 @@ TP Integration Continue - Groupe 6 - Delécolle Florent & Fretel Alexandre & Iza
 
 ### 2 - Difficultés rencontrées et solutions apportées ###
 
+   ● Difficulté à mettre en place les credentials : 
 
 
 ### 3 - Les techniques utilisées ###
