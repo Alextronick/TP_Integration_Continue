@@ -16,7 +16,6 @@ public class ArtisteManager {
 	private static SessionFactory sessionFactory;
 	
 	protected void setUp() throws Exception {
-		// TODO Auto-generated method stub
 		
 		final StandardServiceRegistry registry = new StandardServiceRegistryBuilder().configure().build();
 		try {
