@@ -29,6 +29,7 @@ TP Integration Continue - Groupe 6 - Delécolle Florent & Fretel Alexandre & Iza
 	
 	● Difficulté avec Eclispe : Passage à NetBeans
    	● Difficulté à mettre en place les credentials : Il fallait passer par le protocole HTTPS au lieu du protocole SSH
+	● Difficulté pour l'Open Session (Java) : 
 
 
 ### 3 - Les techniques utilisées ###
