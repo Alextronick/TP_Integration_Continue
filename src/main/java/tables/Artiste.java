@@ -20,10 +20,77 @@ import javax.persistence.Table;
 @Table(name = "artiste")
 public class Artiste {
 	@Id
-	@Column(name="book_id")
+	@Column(name="id")
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
     private long id;
     private String nom;
     private String prenom;
     private int anneeNaiss;
+
+    public Artiste(long _id, String _nom, String _prenom, int _anneeNaiss)
+    {
+        super();
+        this.id = _id;
+        this.nom = _nom;
+        this.prenom = _prenom;
+        this.anneeNaiss = _anneeNaiss;
+    }
+    
+    /**
+     * @return the id
+     */
+    public long getId() {
+        return id;
+    }
+
+    /**
+     * @param id the id to set
+     */
+    public void setId(long id) {
+        this.id = id;
+    }
+
+    /**
+     * @return the nom
+     */
+    public String getNom() {
+        return nom;
+    }
+
+    /**
+     * @param nom the nom to set
+     */
+    public void setNom(String nom) {
+        this.nom = nom;
+    }
+
+    /**
+     * @return the prenom
+     */
+    public String getPrenom() {
+        return prenom;
+    }
+
+    /**
+     * @param prenom the prenom to set
+     */
+    public void setPrenom(String prenom) {
+        this.prenom = prenom;
+    }
+
+    /**
+     * @return the anneeNaiss
+     */
+    public int getAnneeNaiss() {
+        return anneeNaiss;
+    }
+
+    /**
+     * @param anneeNaiss the anneeNaiss to set
+     */
+    public void setAnneeNaiss(int anneeNaiss) {
+        this.anneeNaiss = anneeNaiss;
+    }
+    
+    
 }
