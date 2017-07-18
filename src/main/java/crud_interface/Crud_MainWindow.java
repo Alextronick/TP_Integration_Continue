@@ -28,129 +28,149 @@ public class Crud_MainWindow extends javax.swing.JFrame {
     private void initComponents() {
 
         jScrollPane1 = new javax.swing.JScrollPane();
-        jTable1 = new javax.swing.JTable();
-        jLabel6 = new javax.swing.JLabel();
-        jPanel1 = new javax.swing.JPanel();
-        jTextField3 = new javax.swing.JTextField();
-        jLabel1 = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
-        jLabel3 = new javax.swing.JLabel();
-        jLabel8 = new javax.swing.JLabel();
-        jButton2 = new javax.swing.JButton();
-        jButton1 = new javax.swing.JButton();
-        jLabel5 = new javax.swing.JLabel();
-        jLabel7 = new javax.swing.JLabel();
-        jTextField1 = new javax.swing.JTextField();
-        jTextField2 = new javax.swing.JTextField();
-        jLabel9 = new javax.swing.JLabel();
-        jTextField4 = new javax.swing.JTextField();
+        table = new javax.swing.JTable();
+        label_table = new javax.swing.JLabel();
+        panel_addOrDelete = new javax.swing.JPanel();
+        textField_addEntry_IDReal = new javax.swing.JTextField();
+        label_addEntry_title = new javax.swing.JLabel();
+        label_addEntry_year = new javax.swing.JLabel();
+        label_addEntry_IDReal = new javax.swing.JLabel();
+        label_deleteEntry = new javax.swing.JLabel();
+        button_deleteEntry = new javax.swing.JButton();
+        button_addEntry = new javax.swing.JButton();
+        label_addEntryMessage = new javax.swing.JLabel();
+        label_addEntry = new javax.swing.JLabel();
+        textField_addEntry_title = new javax.swing.JTextField();
+        textField_addEntry_year = new javax.swing.JTextField();
+        label_addEntry_genre = new javax.swing.JLabel();
+        textField_addEntry_genre = new javax.swing.JTextField();
+        textField_addEntry_resume = new javax.swing.JTextField();
+        label_addEntry_resume = new javax.swing.JLabel();
+        label_deleteEntryMessage = new javax.swing.JLabel();
         jMenuBar1 = new javax.swing.JMenuBar();
         jMenu1 = new javax.swing.JMenu();
         jMenu2 = new javax.swing.JMenu();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jTable1.setModel(new javax.swing.table.DefaultTableModel(
+        table.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
-                {null, null, null},
-                {null, null, null},
-                {null, null, null},
-                {null, null, null}
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null}
             },
             new String [] {
-                "Titre", "Réalisateur", "Genre"
+                "Titre", "Année", "ID Réalisateur", "Genre", "Résumé"
             }
         ));
-        jScrollPane1.setViewportView(jTable1);
+        jScrollPane1.setViewportView(table);
 
-        jLabel6.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
-        jLabel6.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel6.setText("jLabel6");
+        label_table.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
+        label_table.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        label_table.setText("Table Film");
 
-        jTextField3.setText("jTextField3");
+        textField_addEntry_IDReal.setText(" ");
 
-        jLabel1.setText("jLabel1");
+        label_addEntry_title.setText("Titre");
 
-        jLabel2.setText("jLabel2");
+        label_addEntry_year.setText("Année");
 
-        jLabel3.setText("jLabel3");
+        label_addEntry_IDReal.setText("ID réalisateur");
 
-        jLabel8.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        jLabel8.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel8.setText("jLabel4");
+        label_deleteEntry.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        label_deleteEntry.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        label_deleteEntry.setText("Supprimer une ligne");
 
-        jButton2.setText("jButton1");
+        button_deleteEntry.setText("Supprimer");
 
-        jButton1.setText("jButton1");
+        button_addEntry.setText("Ajouter");
 
-        jLabel5.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel5.setText("jLabel5");
+        label_addEntryMessage.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        label_addEntryMessage.setText(" ");
 
-        jLabel7.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        jLabel7.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel7.setText("jLabel4");
+        label_addEntry.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        label_addEntry.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        label_addEntry.setText("Ajouter une ligne");
 
-        jTextField1.setText("jTextField1");
+        textField_addEntry_title.setText(" ");
 
-        jTextField2.setText("jTextField2");
+        textField_addEntry_year.setText(" ");
 
-        jLabel9.setText("jLabel3");
+        label_addEntry_genre.setText("Genre");
 
-        jTextField4.setText("jTextField3");
+        textField_addEntry_genre.setText(" ");
 
-        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
-        jPanel1.setLayout(jPanel1Layout);
-        jPanel1Layout.setHorizontalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jButton2, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addComponent(jLabel8, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addComponent(jLabel7, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                    .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE))
+        textField_addEntry_resume.setText(" ");
+
+        label_addEntry_resume.setText("Résumé");
+
+        label_deleteEntryMessage.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        label_deleteEntryMessage.setText(" ");
+
+        javax.swing.GroupLayout panel_addOrDeleteLayout = new javax.swing.GroupLayout(panel_addOrDelete);
+        panel_addOrDelete.setLayout(panel_addOrDeleteLayout);
+        panel_addOrDeleteLayout.setHorizontalGroup(
+            panel_addOrDeleteLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(button_deleteEntry, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(label_deleteEntry, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(label_addEntry, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGroup(panel_addOrDeleteLayout.createSequentialGroup()
+                .addGroup(panel_addOrDeleteLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                    .addComponent(label_addEntry_title, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(textField_addEntry_title, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(jTextField2)
-                    .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGroup(panel_addOrDeleteLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(textField_addEntry_year)
+                    .addComponent(label_addEntry_year, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(jTextField3)
-                    .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGroup(panel_addOrDeleteLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(label_addEntry_IDReal, javax.swing.GroupLayout.DEFAULT_SIZE, 100, Short.MAX_VALUE)
+                    .addComponent(textField_addEntry_IDReal))
                 .addGap(18, 18, 18)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addComponent(jLabel9, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(0, 114, Short.MAX_VALUE))
-                    .addComponent(jTextField4)))
-            .addComponent(jLabel5, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addComponent(jButton1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGroup(panel_addOrDeleteLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(label_addEntry_genre, javax.swing.GroupLayout.DEFAULT_SIZE, 100, Short.MAX_VALUE)
+                    .addComponent(textField_addEntry_genre))
+                .addGap(18, 18, 18)
+                .addGroup(panel_addOrDeleteLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(panel_addOrDeleteLayout.createSequentialGroup()
+                        .addComponent(textField_addEntry_resume, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(0, 0, Short.MAX_VALUE))
+                    .addComponent(label_addEntry_resume, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap())
+            .addComponent(label_addEntryMessage, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(button_addEntry, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(label_deleteEntryMessage, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
-        jPanel1Layout.setVerticalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addComponent(jLabel7, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
+        panel_addOrDeleteLayout.setVerticalGroup(
+            panel_addOrDeleteLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(panel_addOrDeleteLayout.createSequentialGroup()
+                .addComponent(label_addEntry, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(8, 8, 8)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel1)
-                    .addComponent(jLabel2)
-                    .addComponent(jLabel3)
-                    .addComponent(jLabel9))
+                .addGroup(panel_addOrDeleteLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(label_addEntry_title)
+                    .addComponent(label_addEntry_year)
+                    .addComponent(label_addEntry_IDReal)
+                    .addComponent(label_addEntry_genre)
+                    .addComponent(label_addEntry_resume))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jTextField3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jTextField4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGroup(panel_addOrDeleteLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(textField_addEntry_title, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(textField_addEntry_year, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(textField_addEntry_IDReal, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(textField_addEntry_genre, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(textField_addEntry_resume, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
-                .addComponent(jButton1)
+                .addComponent(button_addEntry)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jLabel5)
+                .addComponent(label_addEntryMessage)
                 .addGap(18, 18, 18)
-                .addComponent(jLabel8, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(label_deleteEntry, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
-                .addComponent(jButton2)
-                .addContainerGap(24, Short.MAX_VALUE))
+                .addComponent(button_deleteEntry)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(label_deleteEntryMessage)
+                .addContainerGap())
         );
 
         jMenu1.setText("File");
@@ -166,20 +186,20 @@ public class Crud_MainWindow extends javax.swing.JFrame {
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addComponent(jScrollPane1)
-            .addComponent(jLabel6, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(label_table, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(246, Short.MAX_VALUE))
+                .addComponent(panel_addOrDelete, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(232, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(label_table, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 7, Short.MAX_VALUE)
-                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(panel_addOrDelete, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(46, 46, 46))
         );
 
@@ -222,25 +242,28 @@ public class Crud_MainWindow extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel5;
-    private javax.swing.JLabel jLabel6;
-    private javax.swing.JLabel jLabel7;
-    private javax.swing.JLabel jLabel8;
-    private javax.swing.JLabel jLabel9;
+    private javax.swing.JButton button_addEntry;
+    private javax.swing.JButton button_deleteEntry;
     private javax.swing.JMenu jMenu1;
     private javax.swing.JMenu jMenu2;
     private javax.swing.JMenuBar jMenuBar1;
-    private javax.swing.JPanel jPanel1;
     private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JTable jTable1;
-    private javax.swing.JTextField jTextField1;
-    private javax.swing.JTextField jTextField2;
-    private javax.swing.JTextField jTextField3;
-    private javax.swing.JTextField jTextField4;
+    private javax.swing.JLabel label_addEntry;
+    private javax.swing.JLabel label_addEntryMessage;
+    private javax.swing.JLabel label_addEntry_IDReal;
+    private javax.swing.JLabel label_addEntry_genre;
+    private javax.swing.JLabel label_addEntry_resume;
+    private javax.swing.JLabel label_addEntry_title;
+    private javax.swing.JLabel label_addEntry_year;
+    private javax.swing.JLabel label_deleteEntry;
+    private javax.swing.JLabel label_deleteEntryMessage;
+    private javax.swing.JLabel label_table;
+    private javax.swing.JPanel panel_addOrDelete;
+    private javax.swing.JTable table;
+    private javax.swing.JTextField textField_addEntry_IDReal;
+    private javax.swing.JTextField textField_addEntry_genre;
+    private javax.swing.JTextField textField_addEntry_resume;
+    private javax.swing.JTextField textField_addEntry_title;
+    private javax.swing.JTextField textField_addEntry_year;
     // End of variables declaration//GEN-END:variables
 }

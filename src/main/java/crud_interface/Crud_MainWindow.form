@@ -41,22 +41,22 @@
     <DimensionLayout dim="0">
       <Group type="103" groupAlignment="0" attributes="0">
           <Component id="jScrollPane1" alignment="0" max="32767" attributes="0"/>
-          <Component id="jLabel6" alignment="0" max="32767" attributes="0"/>
+          <Component id="label_table" alignment="0" max="32767" attributes="0"/>
           <Group type="102" alignment="0" attributes="0">
               <EmptySpace max="-2" attributes="0"/>
-              <Component id="jPanel1" min="-2" max="-2" attributes="0"/>
-              <EmptySpace pref="246" max="32767" attributes="0"/>
+              <Component id="panel_addOrDelete" min="-2" max="-2" attributes="0"/>
+              <EmptySpace pref="232" max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
     <DimensionLayout dim="1">
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" alignment="0" attributes="0">
-              <Component id="jLabel6" min="-2" pref="23" max="-2" attributes="0"/>
+              <Component id="label_table" min="-2" pref="23" max="-2" attributes="0"/>
               <EmptySpace max="-2" attributes="0"/>
               <Component id="jScrollPane1" min="-2" pref="150" max="-2" attributes="0"/>
-              <EmptySpace pref="7" max="32767" attributes="0"/>
-              <Component id="jPanel1" min="-2" max="-2" attributes="0"/>
+              <EmptySpace max="32767" attributes="0"/>
+              <Component id="panel_addOrDelete" min="-2" max="-2" attributes="0"/>
               <EmptySpace min="-2" pref="46" max="-2" attributes="0"/>
           </Group>
       </Group>
@@ -70,17 +70,29 @@
 
       <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
       <SubComponents>
-        <Component class="javax.swing.JTable" name="jTable1">
+        <Component class="javax.swing.JTable" name="table">
           <Properties>
             <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.editors2.TableModelEditor">
-              <Table columnCount="3" rowCount="4">
+              <Table columnCount="5" rowCount="4">
                 <Column editable="true" title="Titre" type="java.lang.Object"/>
-                <Column editable="true" title="R&#xe9;alisateur" type="java.lang.Object"/>
+                <Column editable="true" title="Ann&#xe9;e" type="java.lang.Object"/>
+                <Column editable="true" title="ID R&#xe9;alisateur" type="java.lang.Object"/>
                 <Column editable="true" title="Genre" type="java.lang.Object"/>
+                <Column editable="true" title="R&#xe9;sum&#xe9;" type="java.lang.Object"/>
               </Table>
             </Property>
             <Property name="columnModel" type="javax.swing.table.TableColumnModel" editor="org.netbeans.modules.form.editors2.TableColumnModelEditor">
               <TableColumnModel selectionModel="0">
+                <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                  <Title/>
+                  <Editor/>
+                  <Renderer/>
+                </Column>
+                <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                  <Title/>
+                  <Editor/>
+                  <Renderer/>
+                </Column>
                 <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
                   <Title/>
                   <Editor/>
@@ -105,155 +117,182 @@
         </Component>
       </SubComponents>
     </Container>
-    <Component class="javax.swing.JLabel" name="jLabel6">
+    <Component class="javax.swing.JLabel" name="label_table">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Tahoma" size="24" style="0"/>
         </Property>
         <Property name="horizontalAlignment" type="int" value="0"/>
-        <Property name="text" type="java.lang.String" value="jLabel6"/>
+        <Property name="text" type="java.lang.String" value="Table Film"/>
       </Properties>
     </Component>
-    <Container class="javax.swing.JPanel" name="jPanel1">
+    <Container class="javax.swing.JPanel" name="panel_addOrDelete">
 
       <Layout>
         <DimensionLayout dim="0">
           <Group type="103" groupAlignment="0" attributes="0">
-              <Component id="jButton2" alignment="1" max="32767" attributes="0"/>
-              <Component id="jLabel8" alignment="1" max="32767" attributes="0"/>
-              <Component id="jLabel7" alignment="1" max="32767" attributes="0"/>
+              <Component id="button_deleteEntry" alignment="1" max="32767" attributes="0"/>
+              <Component id="label_deleteEntry" alignment="1" max="32767" attributes="0"/>
+              <Component id="label_addEntry" alignment="1" max="32767" attributes="0"/>
               <Group type="102" alignment="0" attributes="0">
                   <Group type="103" groupAlignment="1" max="-2" attributes="0">
-                      <Component id="jLabel1" max="32767" attributes="0"/>
-                      <Component id="jTextField1" min="-2" pref="100" max="-2" attributes="0"/>
+                      <Component id="label_addEntry_title" max="32767" attributes="0"/>
+                      <Component id="textField_addEntry_title" min="-2" pref="100" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace type="unrelated" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                      <Component id="jTextField2" max="32767" attributes="0"/>
-                      <Component id="jLabel2" min="-2" pref="100" max="-2" attributes="0"/>
+                      <Component id="textField_addEntry_year" max="32767" attributes="0"/>
+                      <Component id="label_addEntry_year" min="-2" pref="100" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace type="separate" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                      <Component id="jTextField3" max="32767" attributes="0"/>
-                      <Component id="jLabel3" min="-2" pref="100" max="-2" attributes="0"/>
+                      <Component id="label_addEntry_IDReal" pref="100" max="32767" attributes="0"/>
+                      <Component id="textField_addEntry_IDReal" max="32767" attributes="0"/>
+                  </Group>
+                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                      <Component id="label_addEntry_genre" pref="100" max="32767" attributes="0"/>
+                      <Component id="textField_addEntry_genre" max="32767" attributes="0"/>
                   </Group>
                   <EmptySpace type="separate" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Group type="102" attributes="0">
-                          <Component id="jLabel9" min="-2" pref="100" max="-2" attributes="0"/>
-                          <EmptySpace min="0" pref="114" max="32767" attributes="0"/>
+                          <Component id="textField_addEntry_resume" min="-2" pref="100" max="-2" attributes="0"/>
+                          <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
                       </Group>
-                      <Component id="jTextField4" max="32767" attributes="0"/>
+                      <Component id="label_addEntry_resume" max="32767" attributes="0"/>
                   </Group>
+                  <EmptySpace max="-2" attributes="0"/>
               </Group>
-              <Component id="jLabel5" alignment="1" max="32767" attributes="0"/>
-              <Component id="jButton1" alignment="0" max="32767" attributes="0"/>
+              <Component id="label_addEntryMessage" alignment="1" max="32767" attributes="0"/>
+              <Component id="button_addEntry" alignment="0" max="32767" attributes="0"/>
+              <Component id="label_deleteEntryMessage" alignment="1" max="32767" attributes="0"/>
           </Group>
         </DimensionLayout>
         <DimensionLayout dim="1">
           <Group type="103" groupAlignment="0" attributes="0">
               <Group type="102" alignment="0" attributes="0">
-                  <Component id="jLabel7" min="-2" pref="25" max="-2" attributes="0"/>
+                  <Component id="label_addEntry" min="-2" pref="25" max="-2" attributes="0"/>
                   <EmptySpace min="-2" pref="8" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
-                      <Component id="jLabel1" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="jLabel2" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="jLabel3" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="jLabel9" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="label_addEntry_title" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="label_addEntry_year" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="label_addEntry_IDReal" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="label_addEntry_genre" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="label_addEntry_resume" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
-                      <Component id="jTextField1" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="jTextField2" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="jTextField3" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="jTextField4" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="textField_addEntry_title" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="textField_addEntry_year" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="textField_addEntry_IDReal" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="textField_addEntry_genre" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="textField_addEntry_resume" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace type="separate" max="-2" attributes="0"/>
-                  <Component id="jButton1" min="-2" max="-2" attributes="0"/>
+                  <Component id="button_addEntry" min="-2" max="-2" attributes="0"/>
                   <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                  <Component id="jLabel5" min="-2" max="-2" attributes="0"/>
+                  <Component id="label_addEntryMessage" min="-2" max="-2" attributes="0"/>
                   <EmptySpace type="separate" max="-2" attributes="0"/>
-                  <Component id="jLabel8" min="-2" pref="25" max="-2" attributes="0"/>
+                  <Component id="label_deleteEntry" min="-2" pref="25" max="-2" attributes="0"/>
                   <EmptySpace type="separate" max="-2" attributes="0"/>
-                  <Component id="jButton2" min="-2" max="-2" attributes="0"/>
-                  <EmptySpace pref="24" max="32767" attributes="0"/>
+                  <Component id="button_deleteEntry" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace max="32767" attributes="0"/>
+                  <Component id="label_deleteEntryMessage" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace max="-2" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
       </Layout>
       <SubComponents>
-        <Component class="javax.swing.JTextField" name="jTextField3">
+        <Component class="javax.swing.JTextField" name="textField_addEntry_IDReal">
           <Properties>
-            <Property name="text" type="java.lang.String" value="jTextField3"/>
+            <Property name="text" type="java.lang.String" value=" "/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JLabel" name="jLabel1">
+        <Component class="javax.swing.JLabel" name="label_addEntry_title">
           <Properties>
-            <Property name="text" type="java.lang.String" value="jLabel1"/>
+            <Property name="text" type="java.lang.String" value="Titre"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JLabel" name="jLabel2">
+        <Component class="javax.swing.JLabel" name="label_addEntry_year">
           <Properties>
-            <Property name="text" type="java.lang.String" value="jLabel2"/>
+            <Property name="text" type="java.lang.String" value="Ann&#xe9;e"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JLabel" name="jLabel3">
+        <Component class="javax.swing.JLabel" name="label_addEntry_IDReal">
           <Properties>
-            <Property name="text" type="java.lang.String" value="jLabel3"/>
+            <Property name="text" type="java.lang.String" value="ID r&#xe9;alisateur"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JLabel" name="jLabel8">
+        <Component class="javax.swing.JLabel" name="label_deleteEntry">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Tahoma" size="18" style="0"/>
             </Property>
             <Property name="horizontalAlignment" type="int" value="0"/>
-            <Property name="text" type="java.lang.String" value="jLabel4"/>
+            <Property name="text" type="java.lang.String" value="Supprimer une ligne"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JButton" name="jButton2">
+        <Component class="javax.swing.JButton" name="button_deleteEntry">
           <Properties>
-            <Property name="text" type="java.lang.String" value="jButton1"/>
+            <Property name="text" type="java.lang.String" value="Supprimer"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JButton" name="jButton1">
+        <Component class="javax.swing.JButton" name="button_addEntry">
           <Properties>
-            <Property name="text" type="java.lang.String" value="jButton1"/>
+            <Property name="text" type="java.lang.String" value="Ajouter"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JLabel" name="jLabel5">
+        <Component class="javax.swing.JLabel" name="label_addEntryMessage">
           <Properties>
             <Property name="horizontalAlignment" type="int" value="0"/>
-            <Property name="text" type="java.lang.String" value="jLabel5"/>
+            <Property name="text" type="java.lang.String" value=" "/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JLabel" name="jLabel7">
+        <Component class="javax.swing.JLabel" name="label_addEntry">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Tahoma" size="18" style="0"/>
             </Property>
             <Property name="horizontalAlignment" type="int" value="0"/>
-            <Property name="text" type="java.lang.String" value="jLabel4"/>
+            <Property name="text" type="java.lang.String" value="Ajouter une ligne"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JTextField" name="jTextField1">
+        <Component class="javax.swing.JTextField" name="textField_addEntry_title">
           <Properties>
-            <Property name="text" type="java.lang.String" value="jTextField1"/>
+            <Property name="text" type="java.lang.String" value=" "/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JTextField" name="jTextField2">
+        <Component class="javax.swing.JTextField" name="textField_addEntry_year">
           <Properties>
-            <Property name="text" type="java.lang.String" value="jTextField2"/>
+            <Property name="text" type="java.lang.String" value=" "/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JLabel" name="jLabel9">
+        <Component class="javax.swing.JLabel" name="label_addEntry_genre">
           <Properties>
-            <Property name="text" type="java.lang.String" value="jLabel3"/>
+            <Property name="text" type="java.lang.String" value="Genre"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JTextField" name="jTextField4">
+        <Component class="javax.swing.JTextField" name="textField_addEntry_genre">
           <Properties>
-            <Property name="text" type="java.lang.String" value="jTextField3"/>
+            <Property name="text" type="java.lang.String" value=" "/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JTextField" name="textField_addEntry_resume">
+          <Properties>
+            <Property name="text" type="java.lang.String" value=" "/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="label_addEntry_resume">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="R&#xe9;sum&#xe9;"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="label_deleteEntryMessage">
+          <Properties>
+            <Property name="horizontalAlignment" type="int" value="0"/>
+            <Property name="text" type="java.lang.String" value=" "/>
           </Properties>
         </Component>
       </SubComponents>
