@@ -38,6 +38,10 @@ public class Film {
         this.resume = _resume;
     }
 
+    public Film() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
     /**
      * @return the titre
      */
@@ -106,6 +110,10 @@ public class Film {
      */
     public void setResume(String resume) {
         this.resume = resume;
+    }
+
+    public void setTitre(String titre) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
     
     

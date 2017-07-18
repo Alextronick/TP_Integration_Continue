@@ -35,6 +35,10 @@ public class Artiste {
         this.prenom = _prenom;
         this.anneeNaiss = _anneeNaiss;
     }
+
+    public Artiste() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
     
     /**
      * @return the id

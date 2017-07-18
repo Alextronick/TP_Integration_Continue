@@ -5,6 +5,8 @@
  */
 package crud_interface;
 
+import managers.FilmManager;
+
 /**
  *
  * @author Robin Pinto
@@ -16,6 +18,7 @@ public class Crud_MainWindow extends javax.swing.JFrame {
      */
     public Crud_MainWindow() {
         initComponents();
+        label_data.setText(FilmManager.Test());
     }
 
     /**
@@ -47,6 +50,7 @@ public class Crud_MainWindow extends javax.swing.JFrame {
         textField_addEntry_resume = new javax.swing.JTextField();
         label_addEntry_resume = new javax.swing.JLabel();
         label_deleteEntryMessage = new javax.swing.JLabel();
+        label_data = new javax.swing.JLabel();
         jMenuBar1 = new javax.swing.JMenuBar();
         jMenu1 = new javax.swing.JMenu();
         jMenu2 = new javax.swing.JMenu();
@@ -173,6 +177,10 @@ public class Crud_MainWindow extends javax.swing.JFrame {
                 .addContainerGap())
         );
 
+        label_data.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        label_data.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        label_data.setText("Data");
+
         jMenu1.setText("File");
         jMenuBar1.add(jMenu1);
 
@@ -190,7 +198,9 @@ public class Crud_MainWindow extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(panel_addOrDelete, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(232, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(label_data, javax.swing.GroupLayout.PREFERRED_SIZE, 212, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -199,8 +209,10 @@ public class Crud_MainWindow extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(panel_addOrDelete, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(46, 46, 46))
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(panel_addOrDelete, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(label_data, javax.swing.GroupLayout.PREFERRED_SIZE, 289, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap())
         );
 
         pack();
@@ -255,6 +267,7 @@ public class Crud_MainWindow extends javax.swing.JFrame {
     private javax.swing.JLabel label_addEntry_resume;
     private javax.swing.JLabel label_addEntry_title;
     private javax.swing.JLabel label_addEntry_year;
+    private javax.swing.JLabel label_data;
     private javax.swing.JLabel label_deleteEntry;
     private javax.swing.JLabel label_deleteEntryMessage;
     private javax.swing.JLabel label_table;

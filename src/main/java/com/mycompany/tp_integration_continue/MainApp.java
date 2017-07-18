@@ -1,5 +1,6 @@
 package com.mycompany.tp_integration_continue;
 
+import crud_interface.Crud_MainWindow;
 import javafx.application.Application;
 import static javafx.application.Application.launch;
 import javafx.fxml.FXMLLoader;
@@ -23,6 +24,9 @@ public class MainApp extends Application {
         stage.setScene(scene);
         stage.show();
         */
+        
+        Crud_MainWindow mainWindow = new Crud_MainWindow();
+        mainWindow.setVisible(true);
     }
 
     /**
@@ -33,7 +37,7 @@ public class MainApp extends Application {
      *
      * @param args the command line arguments
      */
-    //vhjvvhjf
+    
     public static void main(String[] args) {
         launch(args);
     }
